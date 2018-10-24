@@ -1,0 +1,258 @@
+* {
+  font-family: Verdana;
+  text-align: center;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+#largeImgPanel {
+  text-align: center;
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(100,100,100, 0.5);
+}
+
+#largeImg {
+  height: auto; 
+  margin-top: 200px;
+  padding:0;
+  max-width: 100%;
+}
+
+/*.content {
+  margin-top: 100%;
+  margin-bottom: 100%;
+}*/
+
+small {
+  margin-left: 24px;
+  color: gray;
+}
+
+
+
+body {
+  overflow: auto;
+  height: auto;
+  margin: 0 0 100px;
+  display: block;
+  background-image: url("../img/diamond_upholstery.png");
+  }
+
+p {
+  color: white;
+  font: 20em;
+  font-family: Verdana;
+}
+
+ul.nav-links {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #a21c4f;
+  display:block;
+  width: 100%;
+
+}
+
+
+ul.nav-links li {
+  float: none;
+  border-bottom: dotted .1em #620729;
+
+}
+
+ul.nav-links li a {
+  display: block;  
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  font-family: Verdana;
+  padding-left: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.top-nav a:hover {
+  background-color: #620729;
+}
+
+
+#home {
+    background-image: url("../img/dark_embroidery.png");
+/*    background-color: #000305;
+*/    font-size: 87.5%; 
+    text-align: center;
+    top: 0;
+    height: auto;
+}
+
+
+#home #intro > p {
+/*  margin-top: 0;
+*/  display: inline-block;
+}
+
+#home #intro {
+  padding: 5%;
+}
+
+#home #name {
+  color: white;
+}
+
+.pic {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.title {
+  color: #a21c4f;
+  text-align: center;
+}
+
+#about {
+  background-image: url("../img/dark_stripes.png");
+  padding: 10px;
+  text-align: center;
+  margin: 0;
+}
+
+#about > text {
+ color: white;
+ font-family: Verdana;
+
+}
+
+#about text > a {
+  text-decoration: none;
+  color: #a21c4f;
+  font-weight: bold;
+}
+
+#about text > a:hover {
+  color: #fe7faf;
+}
+
+#projects {
+  background-image: url("../img/greyzz.png");
+  margin: 0;
+  padding: 10px;
+}
+
+#projects #list_projs {
+  list-style: none;
+  padding-left: 0;
+}
+
+#projects > #list_projs li {
+  list-style-type: none;
+  color: #a21c4f;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#projects p {
+  color: black;
+}
+
+#skills {
+  height: auto;
+  padding: 10px;
+  margin: 0;
+  background-image: url("../img/dark_stripes.png");
+}
+
+
+#skills > p {
+  color: white;
+  font-size: .9em;
+  text-align: center;
+}
+
+#skills h3 {
+  color: white;
+  margin-left: 20px;
+
+}
+
+#skills #courses {
+  color:white;
+  margin-left: 20px;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+
+#contact {
+  background-image: url("../img/diamond_upholstery.png");
+  padding: 10px;
+  margin:0;
+  text-align: center;
+}
+
+
+
+#contact #email {
+  color: #a21c4f;
+  margin-left: 20px;
+  font-weight: bold;
+  display: inline-block;
+
+}
+
+.footer {
+  background-color: #620729;
+  bottom: 0;
+  font-size: .7em;
+  position: absolute;
+  width: 100%;
+  display: block;
+ }
+
+/*Media Queries*/
+
+@media only screen and (min-width: 320px){
+  .pic {
+    max-width: 50%;
+  }
+  #home #name {
+    font-size: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 500px) {
+  ul.nav-links li a {
+    display: block;
+    padding: 14px 16px;
+  }
+
+  ul.nav-links li {
+    float: left;
+    border-bottom: none;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) {
+  #largeImg {
+  margin-top: 100px;
+  display: inline-block;
+  }
+
+  #projects p {
+    display: inline-block;
+  }
+
+}
